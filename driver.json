@@ -264,7 +264,6 @@
       }
     },
     {
-<<<<<<< HEAD
       "name": "BTT Octopus Pro 1.1 H723",
       "symbol": "BOARD_BTT_OCTOPUS_PRO",
       "URL": "https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro",
@@ -313,8 +312,6 @@
       }
     },
     {
-=======
->>>>>>> refs/remotes/origin/manta
       "name": "BTT Manta M8P V2 H723",
       "symbol": "BOARD_BTT_MANTA_M8P",
       "URL": "https://github.com/bigtreetech/Manta-M8P",
