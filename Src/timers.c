@@ -740,7 +740,11 @@ enum {
 #undef LAST_TIDX
 #define LAST_TIDX TIM16_IDX
 
+<<<<<<< HEAD
 ISR_CODE void TIM16_IRQHandler (void)
+=======
+void TIM16_IRQHandler (void)
+>>>>>>> refs/remotes/origin/manta
 {
     _irq_handler(TIM16, &timers[TIM16_IDX].cfg);
 }
