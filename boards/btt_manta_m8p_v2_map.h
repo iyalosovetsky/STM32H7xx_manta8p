@@ -30,7 +30,35 @@
 #define BOARD_NAME "BTT Manta M8P V2"
 #define BOARD_URL "https://github.com/bigtreetech/Manta-M8P"
 
-#define SERIAL_PORT                 1       // GPIOA: TX =  9, RX = 10
+//ig#define SERIAL_PORT                 1       // GPIOA: TX =  9, RX = 10
+#define USB_SERIAL_CDC          1 // Serial communication via native USB.          1 // Serial communication via native USB.
+#define SERIAL_PORT                 32       // GPIOA: TX =  9, RX = 10
+#define SERIAL1_PORT                 1       // GPIOA: TX =  9, RX = 10
+
+
+
+// #if USB_SERIAL_CDC
+// #define SERIAL1_PORT           11   // GPIOB: TX = 6, RX = 7
+// #define COPROC_STREAM           1
+// #else
+// #define SERIAL1_PORT            1   // GPIOA: TX = 9, RX = 10
+// #endif
+
+// USB_OTG_ID 0 cm5 is host, 1 is device
+// USB_OTG_ID 0 - hsd1(+-) is host, 1 - hsd2(+-) 
+//USB_OTG_ID 0 - hsd1(+-),USBH_P/N is host to switch FE1.1s; 1 - hsd2(+-),  USBD_P/N to type-c device (if sw2 in upper position 1-2,4-5)
+// switch FE1.1s ports:
+//DM4/DP4 -ub_n/p USB_p/n pa11-12 
+//DM3/DP3 -ub3_n/p USB3_p/n switch 2.54mm 4P  -> GND DP DM VUSB
+//DM2/DP2 -ub_2_n/p USB2_p/n DIP USB A #2
+//DM1/DP1 -ub1_n/p USB1_p/n DIP USB A #1
+
+//GPIO14 Pi-TX 8
+//GPIO15 Pi-RX 10
+//GPIO12 UART4_TX
+//GPIO13 UART4_RX
+
+
 #define SPI_PORT                    3       // GPIOC: SCK = 10, MISO - 11, MOSI - 12
 
 // todo: I2C3 is routed to a board header, however the clock & data pins
